@@ -1,0 +1,24 @@
+<h1>Lista de Categorias</h1>
+  {{#each categories}}
+<div class="container">
+  <div class="row">
+    <table class="table table-sm">
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Nombre de Categoria</th>
+          <th>Accion</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>{{id}}</td>
+          <td>{{name}}</td>
+          <td> <a class="btn btn-danger" href="/category/delete/{{id}}">Eliminar</a>
+          <a class="btn btn-secondary" href="/category/edit/{{id}}">Editar</a> </td>
+        </tr>
+      </tbody>
+    </table>
+      {{/each}}
+  </div>
+</div>

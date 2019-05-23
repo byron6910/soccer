@@ -1,0 +1,51 @@
+<form action="/teams/edit/{{team.id}}" method="POST">
+
+  <div class="container">
+    <div class="form-group col-md-4">
+      <label for="name"> Nombre Equipo:</label>
+      <input type="text" class="form-control" id="name" name="name" value={{team.name}}>
+
+    </div>
+
+    <div class="form-group col-md-4">
+      <label for="date"> Fecha Fundacion:</label>
+      <input type="date" class="form-control" id="date" name="date_f" value={{team.date_f}}>
+
+    </div>
+
+
+    <div class="form-group col-md-4">
+      <label for="nombre"> Categoria:</label>
+      <select name="category">
+        <option selected value="0">Maxima</option>
+        <option value="1">Primera</option>
+      </select>
+
+    </div>
+
+    <div class="form-group col-md-4">
+      <label for="president"> Presidente:</label>
+      <input type="text" class="form-control" id="president" name="president" value={{team.president}}>
+
+    </div>
+
+    <div class="form-group col-md-4">
+      <label for="mail"> Correo Equipo:</label>
+      <input type="mail" class="form-control" id="mail" name="mail" value={{team.mail}}>
+
+    </div>
+
+    <div class="form-group col-md-4">
+      <label for="phone"> Telefono:</label>
+      <input type="number" class="form-control" id="phone" name="phone" value={{team.phone}}>
+
+    </div>
+
+
+    <div class="form-group col-md-4">
+      <button type="submit" class="btn btn-primary">Actualizar Equipo</button>
+    </div>
+
+  </div>
+
+</form>
