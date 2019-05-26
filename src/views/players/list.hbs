@@ -1,0 +1,40 @@
+<h1>Lista de Categorias</h1>
+  {{#each players}}
+<div class="container">
+  <div class="row">
+    <table class="table table-sm">
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Nombres y Apellidos</th>
+          <th>Email</th>
+          <th>Fecha de nacimiento</th>
+          <th>Equipo</th>
+          <th>Numero</th>
+          <th>Telefono</th>
+          <th>Direccion</th>
+
+
+          <th>Accion</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>{{id}}</td>
+          <td>{{name}} {{last_name}}</td>
+          <td>{{mail}}</td>
+          <td>{{date_n}}</td>
+          <td>{{team}}</td>
+          <td>{{number_player}}</td>
+          <td>{{cellphone}}</td>
+          <td>{{address}}</td>
+
+
+          <td> <a class="btn btn-danger" href="/players/delete/{{id}}">Eliminar</a>
+          <a class="btn btn-secondary" href="/players/edit/{{id}}">Editar</a> </td>
+        </tr>
+      </tbody>
+    </table>
+      {{/each}}
+  </div>
+</div>

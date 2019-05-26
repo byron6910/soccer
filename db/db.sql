@@ -19,3 +19,16 @@ CREATE TABLE teams(
   phone INT(10) NOT NULL,
   PRIMARY KEY(id)
 );
+
+CREATE TABLE players(
+  id INT(10)  NOT NULL,
+  name VARCHAR(64) NOT NULL,
+  last_name VARCHAR(64) NOT NULL,
+  cellphone INT(10) NOT NULL,
+  address VARCHAR(64) NOT NULL,
+  date_n DATE NOT NULL,
+  team VARCHAR(64) NOT NULL,
+  number_player VARCHAR(2) NOT NULL,
+  mail VARCHAR(64) NOT NULL,
+  PRIMARY KEY(id)
+);

@@ -1,0 +1,64 @@
+<form action="/players/edit/{{player.id}}" method="POST">
+<div class="container-fluid form-row">
+
+  <div class="form-group col-md-6 col-offset 1">
+    <label for="cedula"> Cedula</label>
+    <input type="number" class="form-control" id="cedula" value={{player.id}} name="id">
+  </div>
+
+  <div class="form-group col-md-6">
+    <label for="nombre">Nombres:</label>
+    <input type="text" class="form-control" id="nombre" value={{player.name}} name="name">
+  </div>
+
+  <div class="form-group col-md-6">
+    <label for="apellidos">Apellidos</label>
+    <input type="text" class="form-control" id="apellidos" value={{player.last_name}} name="last_name">
+  </div>
+
+  <div class="form-group col-md-6">
+    <label for="telefono">Telefono:</label>
+    <input type="number" class="form-control" id="telefono" value={{player.cellphone}} name="cellphone">
+  </div>
+  <div class="form-group col-md-6">
+    <label for="inputEmail4">Email</label>
+    <input type="email" class="form-control" id="inputEmail4" value={{player.mail}} name="mail">
+  </div>
+
+<div class="form-group col-md-6">
+  <label for="direccion">Direccion</label>
+  <input type="text" class="form-control" id="direccion" value={{player.address}} name="address">
+</div>
+
+<div class="form-group col-md-6">
+  <label for="fecha_nacimiento">Fecha de nacimiento:</label>
+  <input type="date" class="form-control" id="nacimiento" value={{player.date_n}} name="date_n">
+</div>
+
+</div>
+
+<div class="container-fluid form-row">
+
+  <div class="form-group col-md-6">
+    <label for="Equipo">Equipo</label>
+    <select id="categoria" class="form-control" name="team">
+      <option selected value={{player.team}}>{{player.team}}</option>
+      <option value="RFC">RFC</option>
+      <option value="DSC">DSC</option>
+    </select>
+  </div>
+
+
+
+  <div class="form-group col-md-2">
+    <label for="numero">Numero de Cancha</label>
+    <input type="number" class="form-control" id="numero" name="number_player" value={{player.number_player}}>
+  </div>
+</div>
+
+
+
+<div class="container-fluid">
+<button type="submit" class="btn btn-primary">Actualizar Jugador</button>
+
+</div>
