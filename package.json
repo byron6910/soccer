@@ -10,7 +10,7 @@
   "license": "ISC",
   "dependencies": {
     "bcryptjs": "^2.4.3",
-    "express": "^4.17.0",
+    "express": "^4.17.3",
     "express-handlebars": "^3.1.0",
     "flash": "^1.1.0",
     "morgan": "^1.9.1",
